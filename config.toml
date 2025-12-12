@@ -1,0 +1,42 @@
+baseURL = "https://example.com/"
+languageCode = "zh-cn"
+title = "MoCI Tech Site"
+theme = "PaperMod"
+paginate = 10
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+  author = "MoCI"
+  ShowReadingTime = true
+  defaultTheme = "auto"
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = true
+  ShowPostNavLinks = true
+
+[menu]
+  [[menu.main]]
+      identifier = "posts"
+      name = "文章"
+      url = "/posts/"
+      weight = 10
+
+  [[menu.main]]
+      identifier = "notes"
+      name = "笔记"
+      url = "/notes/"
+      weight = 20
+
+  [[menu.main]]
+      identifier = "files"
+      name = "资料"
+      url = "/files/"
+      weight = 30
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNumbers = true
+    noClasses = false
