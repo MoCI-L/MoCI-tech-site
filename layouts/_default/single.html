@@ -1,0 +1,21 @@
+{{ if .Params.password }}
+<div id="protected">
+  <p>请输入密码访问本页</p>
+  <input type="password" id="pw">
+  <button onclick="checkPassword()">提交</button>
+</div>
+
+<script>
+function checkPassword(){
+  const pw = document.getElementById('pw').value;
+  if(pw === "{{ .Params.password }}"){
+    document.getElementById('protected').style.display='none';
+    document.body.innerHTML += `{{ .Content | safeHTML }}`;
+  } else {
+    alert('密码错误');
+  }
+}
+</script>
+{{ else }}
+{{ .Content | safeHTML }}
+{{ end }}

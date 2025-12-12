@@ -18,8 +18,31 @@ home = ["HTML", "RSS", "JSON"]
   ShowToc = true
   TocOpen = true
   ShowPostNavLinks = true
+  EnableRSS = true
+  ShowLastMod = true
+  ShowCategories = true
+  ShowTags = true
+  ShowPageShare = true
+  ShowSocialIcons = true
+  #开启搜索
+  SearchEngine = "lunr"
+  ShowMenuSearch = true
+[params.social]
+  github = "https://github.com/MoCI-L"
+  email = "example@email.com"
+  telegram = "https://t.me/YourTelegram"
+  rss = "/index.xml"
 
+[params.header]
+  showTitle = true
+  sticky = true
+  showMenu = true
 [menu]
+  [[menu.main]]
+      identifier = "about"
+      name = "关于"
+      url = "/about/"
+      weight = 5
   [[menu.main]]
       identifier = "posts"
       name = "文章"

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MoCI Tech Site</title>
-    <link>http://localhost:1313/MoCI-tech-site/</link>
+    <link>http://localhost:43017/MoCI-tech-site/</link>
     <description>Recent content on MoCI Tech Site</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 12 Dec 2025 20:50:22 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/MoCI-tech-site/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:43017/MoCI-tech-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
-      <link>http://localhost:1313/MoCI-tech-site/posts/hello-world/</link>
+      <link>http://localhost:43017/MoCI-tech-site/posts/hello-world/</link>
       <pubDate>Fri, 12 Dec 2025 20:50:22 +0800</pubDate>
-      <guid>http://localhost:1313/MoCI-tech-site/posts/hello-world/</guid>
-      <description></description>
+      <guid>http://localhost:43017/MoCI-tech-site/posts/hello-world/</guid>
+      <description>&lt;p&gt;第一篇文章&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/MoCI-tech-site/posts/hello_world/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/MoCI-tech-site/posts/hello_world/</guid>
-      <description>&lt;p&gt;这是你的第一篇技术文章。&lt;/p&gt;
-&lt;p&gt;支持代码高亮：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Hello Tech Site&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <title>欢迎来到 MoCI 技术站</title>
+      <link>http://localhost:43017/MoCI-tech-site/posts/welcome/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:43017/MoCI-tech-site/posts/welcome/</guid>
+      <description>&lt;p&gt;欢迎来到 MoCI 技术站！&lt;/p&gt;
+&lt;p&gt;这里会记录我的技术学习、笔记和资料整理。&lt;br&gt;
+你可以在文章、笔记和资料栏目找到内容。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;技术风主题: PaperMod&lt;/li&gt;
+&lt;li&gt;部署: GitHub Pages + Cloudflare Pages&lt;/li&gt;
+&lt;li&gt;搜索功能支持文章、笔记查询&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
