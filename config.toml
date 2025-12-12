@@ -1,8 +1,11 @@
-baseURL = "https://example.com/"
+baseURL = "https://MoCI-L.github.io/MoCI-tech-site/"
 languageCode = "zh-cn"
 title = "MoCI Tech Site"
 theme = "PaperMod"
-paginate = 10
+
+[pagination]
+  pagerSize = 10
+
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
