@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/MoCI-tech-site/</loc>
-    <lastmod>2025-12-12T20:50:22+08:00</lastmod>
+    <lastmod>2025-12-13T19:52:51+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MoCI-tech-site/notes/</loc>
+    <lastmod>2025-12-13T19:52:51+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MoCI-tech-site/notes/private/</loc>
+    <lastmod>2025-12-13T19:52:51+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/MoCI-tech-site/posts/hello-world/</loc>
     <lastmod>2025-12-12T20:50:22+08:00</lastmod>
@@ -23,13 +29,9 @@
     <loc>http://localhost:1313/MoCI-tech-site/posts/welcome/</loc>
     <lastmod>2025-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/MoCI-tech-site/notes/shenduxuexi_learn/</loc>
-  </url><url>
     <loc>http://localhost:1313/MoCI-tech-site/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/MoCI-tech-site/notes/site_manual/</loc>
-  </url><url>
-    <loc>http://localhost:1313/MoCI-tech-site/notes/</loc>
   </url><url>
     <loc>http://localhost:1313/MoCI-tech-site/about/</loc>
   </url>
