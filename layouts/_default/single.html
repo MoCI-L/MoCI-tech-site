@@ -1,21 +1,101 @@
+{{ define "main" }}
+
 {{ if .Params.password }}
-<div id="protected">
-  <p>请输入密码访问本页</p>
-  <input type="password" id="pw">
-  <button onclick="checkPassword()">提交</button>
+
+<style>
+/* 解锁卡片容器 */
+.unlock-wrapper {
+  max-width: 420px;
+  margin: 6rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: var(--entry);
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  text-align: center;
+}
+
+/* 标题 */
+.unlock-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* 输入框 */
+.unlock-input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--theme);
+  color: var(--content);
+}
+
+/* 按钮 */
+.unlock-btn {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* 错误提示 */
+.unlock-error {
+  margin-top: 0.8rem;
+  color: #ff6b6b;
+  font-size: 0.9rem;
+}
+
+/* 正文隐藏 */
+#protected-content {
+  display: none;
+}
+</style>
+
+<div class="unlock-wrapper" id="unlock-box">
+  <div class="unlock-title">🔒 本页内容受保护</div>
+  <p>请输入访问密码以解锁内容</p>
+
+  <input
+    type="password"
+    id="unlock-password"
+    class="unlock-input"
+    placeholder="Password"
+  />
+
+  <button class="unlock-btn" onclick="unlockContent()">解锁内容</button>
+
+  <div class="unlock-error" id="unlock-error"></div>
+</div>
+
+<div id="protected-content">
+  {{ .Content }}
 </div>
 
 <script>
-function checkPassword(){
-  const pw = document.getElementById('pw').value;
-  if(pw === "{{ .Params.password }}"){
-    document.getElementById('protected').style.display='none';
-    document.body.innerHTML += `{{ .Content | safeHTML }}`;
+function unlockContent() {
+  const input = document.getElementById("unlock-password").value;
+  const error = document.getElementById("unlock-error");
+  const password = "{{ .Params.password }}";
+
+  if (input === password) {
+    document.getElementById("unlock-box").style.display = "none";
+    document.getElementById("protected-content").style.display = "block";
   } else {
-    alert('密码错误');
+    error.innerText = "密码错误，请重试";
   }
 }
 </script>
+
 {{ else }}
-{{ .Content | safeHTML }}
+
+{{ .Content }}
+
+{{ end }}
+
 {{ end }}
